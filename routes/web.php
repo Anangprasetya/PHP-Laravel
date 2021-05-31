@@ -18,5 +18,6 @@ Route::get('/', function () {
 });
 
 Route::get('/about', function () {
-    return view('about');
+    $nama = "ANANG NUR PRASETYA";
+    return view('about', ['nama' => $nama]);
 });

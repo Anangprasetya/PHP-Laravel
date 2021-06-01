@@ -14,15 +14,5 @@ use App\Http\Controllers\PagesController;
 |
 */
 
-// Route::get('/', function () {
-//     return view('index');
-// });
-
-// Route::get('/about', function () {
-//     $nama = "ANANG NUR PRASETYA";
-//     return view('about', ['nama' => $nama]);
-// });
-
-
 Route::get('/', [PagesController::class, 'home']);
-// Route::get('/about', 'PagesController@about');
+Route::get('/about', [PagesController::class, 'about']);

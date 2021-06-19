@@ -22,7 +22,7 @@
                     <tr>
                         <th scope="row">{{$loop->iteration}}</th>
                         <td>{{$mhs->nama}} </td>
-                        <td>{{$mhs->nim}}</td>
+                        <td>{{$mhs->nrp}}</td>
                         <td>{{$mhs->email}}</td>
                         <td>{{$mhs->jurusan}}</td>
                         <td>

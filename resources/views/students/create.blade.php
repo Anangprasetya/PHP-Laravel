@@ -6,7 +6,8 @@
         <div class="col-8">
             <h1 class="mt-3">Form Tambah Data Mahasiswa</h1>
 
-            <form action="/students/create" method="POST">
+            <form action="/students" method="POST">
+                @csrf
                 <div class="mb-3">
                     <label for="nama" class="form-label">Nama</label>
                     <input type="text" class="form-control" id="nama" placeholder="Masukkan Nama" name="nama">

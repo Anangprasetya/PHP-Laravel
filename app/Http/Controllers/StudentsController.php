@@ -36,7 +36,23 @@ class StudentsController extends Controller
      */
     public function store(Request $request)
     {
-        return $request;
+        // $student = new Student();
+        // $student->nama = $request->nama;
+        // $student->nrp = $request->nrp;
+        // $student->email = $request->email;
+        // $student->jurusan = $request->jurusan;
+
+        // $student->save();
+
+        // Student::create([
+        //     'nama' => $request->nama,
+        //     'nrp' => $request->nrp,
+        //     'email' => $request->email,
+        //     'jurusan' => $request->jurusan
+        // ]);
+
+        Student::create($request->all());
+        return redirect('/students');
     }
 
     /**

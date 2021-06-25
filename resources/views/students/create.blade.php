@@ -10,11 +10,13 @@
                 @csrf
                 <div class="mb-3">
                     <label for="nama" class="form-label">Nama</label>
-                    <input type="text" class="form-control" id="nama" placeholder="Masukkan Nama" name="nama">
+                    <input type="text" class="form-control @error('nama') is-invalid @enderror" id="nama" placeholder="Masukkan Nama" name="nama">
+                    <div id="validationServer03Feedback" class="invalid-feedback">@error('nama') {{$message}} @enderror</div>
                 </div>
                 <div class="mb-3">
                     <label for="nrp" class="form-label">NRP</label>
-                    <input type="text" class="form-control" id="nrp" placeholder="Masukkan NRP" name="nrp">
+                    <input type="text" class="form-control @error('nrp') is-invalid @enderror" id="nrp" placeholder="Masukkan NRP" name="nrp">
+                    <div id="validationServer03Feedback" class="invalid-feedback">@error('nrp') {{$message}} @enderror</div>
                 </div>
                 <div class="mb-3">
                     <label for="email" class="form-label">Email</label>
